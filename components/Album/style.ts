@@ -1,0 +1,17 @@
+import {StyleSheet} from "react-native";
+
+const Style = StyleSheet.create({
+ container:{
+   width:200,
+ },
+ image:{
+    width: '100%',
+    height:200,
+ },
+ text :{
+     color :'gray',
+     marginTop: 10,
+ }   
+})
+
+export  default Style;
