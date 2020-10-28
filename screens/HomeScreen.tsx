@@ -1,10 +1,18 @@
 import * as React from 'react';
 import { StyleSheet,Text, View } from 'react-native';
 
-export default function TabOneScreen() {
+import Album from '../components/Album';
+
+const album = {
+  id: '1',
+  imageUrl: 'https://i0.wp.com/www.unitedbypop.com/wp-content/uploads/2020/09/LaFf841gwmRNaqrj95Q1FkqfqMc3XSeC7l1P-YcmGU.png?fit=1280%2C720&ssl=1',
+  artistsHeadline : 'Taylor Swift, Ed Sheeran'
+}
+
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
-     <Text style={{color: 'white'}}>Hello</Text>
+        <Album album={album}/>
     </View>
   );
 }
