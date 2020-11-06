@@ -13,7 +13,8 @@ const AlbumCategory = (props: AlbumCategory) => (
         {/* title */}
         <Text style={styles.title}>{props.title}</Text>
         {/* List of albums */}
-        <FlatList data={props.albums}
+        <FlatList
+         data={props.albums}
          renderItem={({item}) => <AlbumComponent album={item}/>}
          keyExtractor= {(item) => item.id }
          horizontal

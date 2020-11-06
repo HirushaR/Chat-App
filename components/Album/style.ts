@@ -3,6 +3,7 @@ import {StyleSheet} from "react-native";
 const Style = StyleSheet.create({
  container:{
    width:200,
+   margin:10,
  },
  image:{
     width: '100%',
