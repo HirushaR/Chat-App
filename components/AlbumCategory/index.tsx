@@ -9,7 +9,7 @@ export  type AlbumCategory = {
     albums : [Album]
 }
 const AlbumCategory = (props: AlbumCategory) => (
-    <View>
+    <View style={styles.container}>
         {/* title */}
         <Text style={styles.title}>{props.title}</Text>
         {/* List of albums */}
@@ -17,6 +17,7 @@ const AlbumCategory = (props: AlbumCategory) => (
          data={props.albums}
          renderItem={({item}) => <AlbumComponent album={item}/>}
          keyExtractor= {(item) => item.id }
+         showsVerticalScrollIndicator = {false}
          horizontal
          /> 
 
